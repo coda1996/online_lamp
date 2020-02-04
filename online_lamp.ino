@@ -26,8 +26,8 @@ const char auth[] = "AUTH TOKEN"; //Make acount on Blynk.com and get your AUTH T
 IPAddress wap_ip(192, 168, 1, 1); //Server ip adres when in WAP mode
 IPAddress wap_gateway(192, 168, 1, 254);
 IPAddress subnet(255, 255, 255, 0);
-const char *ssid2 = "SSID";
-const char *password2 = "PASS";
+const char *ssid2 = "ESP8266_Hotspot";
+const char *password2 = "onlineLamp123";
 
 #define button_Pin 16
 String ssid_Arg;// Error message for ssid input
@@ -339,7 +339,7 @@ void handleSubmit() {
         response += "<br>";
 
         response += "</P><BR>";
-        response += "<P>Reboot the ESP8266 module and enjoy your LED lamp! :*<br>";
+        response += "<P>Reboot the ESP8266 module and enjoy your LED lamp!<br>";
         response += "</P>";
         response += "<H2><a href=\"/\">go home</a></H2><br>";
         server.send(200, "text/html", response);

@@ -1,1 +1,5 @@
-read me
+#Online lamp
+
+
+This code is for controlling the lamp over the internet using your phone. It is written for ESP8266. It uses the Blynk library to communicate over the internet with your phone. The lamp has 3 WS2812 LEDs, and their colors are controlled over the internet using the FastLED library. 
+After booting the ESP will check in which position is the switch, if the switch is in ON position the ESP8266 will host a hotspot with a local webserver and when you connect to it using the password of your choice you can go to the web page on the local webserver using any browser, the ip will be by default 192.168.1.1 (you can change it in the code). When you are on the webpage you can enter the SSID and password of the wifi network the ESP8266 will be using to communicate over the internet and it will be stored in EEPROM of ESP9266. Then you reboot the lamp and keep the switch in OFF position. If the switch after booting is in OFF position the ESP will read from EEPROM memory the SSID and password of wifi network and try to connect to it. After connecting to the internet you can control it from your phone using the Blynk app. 

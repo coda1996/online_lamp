@@ -1,4 +1,4 @@
-#Online lamp
+# Online lamp
 
 
 This code is for controlling the lamp over the internet using your phone. It is written for ESP8266. It uses the Blynk library to communicate over the internet with your phone. The lamp has 3 WS2812 LEDs, and their colors are controlled over the internet using the FastLED library. 
